@@ -14,5 +14,11 @@
 <!-- Dynamic include - content changes a lot (This is a separate request to the app server- tomcat server) -->
 <jsp:include page="updates.txt"/>
 
+<!-- Must use static include if it's got java code in it that we want to access -->
+<p/>
+<%@include file="variables.jsp" %>
+<%=name %>
+
+
 </body>
 </html>
